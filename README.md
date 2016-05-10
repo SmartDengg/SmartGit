@@ -38,7 +38,7 @@
 
 - git remote add命令用于添加远程主机。
 
-	$ git remote add <主机名> <网址>
+		$ git remote add <主机名> <网址>
 
 - git remote rm命令用于删除远程主机。
 
@@ -46,7 +46,7 @@ $ git remote rm <主机名>
 
 - git remote rename命令用于远程主机的改名。
 
-	$ git remote rename <原主机名> <新主机名>
+		$ git remote rename <原主机名> <新主机名>
 
 - Create a new repository on the command line
 
