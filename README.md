@@ -9,7 +9,7 @@
 	git init
 	rm -rf .git
 
-### git remote
+### Git remote
 
 为了便于管理，Git要求每个远程主机都必须指定一个主机名。git remote命令就用于管理主机名。
 
