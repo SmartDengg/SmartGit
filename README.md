@@ -42,7 +42,7 @@
 
 - git remote rm命令用于删除远程主机。
 
-$ git remote rm <主机名>
+		$ git remote rm <主机名>
 
 - git remote rename命令用于远程主机的改名。
 
