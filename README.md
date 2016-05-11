@@ -88,7 +88,7 @@
 	$ git reset --hard ORIG_HEAD
 
 
-**合并指令**
+**撤销指令**
 
 	# 恢复暂存区的指定文件到工作区
 	$ git checkout [file]
