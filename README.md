@@ -73,3 +73,16 @@
 [pushing-to-a-remote](https://help.github.com/articles/pushing-to-a-remote/) include *Renaming branches*
 
 [正常的工作流程](http://gitbook.liuhui998.com/3_2.html)
+
+
+### 撤销
+
+**撒销一个合并**
+
+如果你觉得你合并后的状态是一团乱麻，想把当前的修改都放弃，你可以用下面的命令回到合并之前的状态：
+
+	$ git reset --hard HEAD
+
+或者你已经把合并后的代码提交，但还是想把它们撒销：
+
+	$ git reset --hard ORIG_HEAD
