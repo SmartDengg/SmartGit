@@ -71,3 +71,5 @@
 [renaming-a-remote](https://help.github.com/articles/renaming-a-remote/)
 
 [pushing-to-a-remote](https://help.github.com/articles/pushing-to-a-remote/) include *Renaming branches*
+
+[正常的工作流程](http://gitbook.liuhui998.com/3_2.html)
