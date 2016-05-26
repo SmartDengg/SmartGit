@@ -121,3 +121,13 @@
 	# 暂时将未提交的变化移除，稍后再移入
 	$ git stash
 	$ git stash pop
+
+## 新建分支并添加建立追踪
+	
+	# 新建一个分支，与指定的远程分支建立追踪关系
+	$ git branch --track [branch] [remote-branch]
+		
+	# 新建一个分支，并切换到该分支
+	$ git checkout -b [branch]
+
+
