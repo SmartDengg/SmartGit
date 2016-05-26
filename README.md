@@ -121,3 +121,51 @@
 	# 暂时将未提交的变化移除，稍后再移入
 	$ git stash
 	$ git stash pop
+
+
+
+##创建分支并建立追踪关系
+
+	# 新建一个分支，并切换到该分支
+	$ git checkout -b [branch]
+
+	#push并建立追踪关系
+	"The current branch dev2 has no upstream branch.To push the current branch and set the remote as upstream, use:
+	# 1.7.0	
+	$ git push --set-upstream [host] [remote-branch]
+	# 或者1.8.0
+	$ git push -u [host] [remote-branch]
+
+
+	#如果远程不存在指定分支名，则创建新分支，但不建立追踪关系
+	$ git push [host] [local-branch]:[remote-branch]
+
+	#建立追踪关系，在现有分支与指定的远程分支之间
+	# Git 1.7.0
+	$ git branch --set-upstream [branch] [host]/[remote-branch]
+	# 或者Git 1.8.0
+	$ git branch -u [host]/[remote-branch] [branch]
+	# Git 1.8.0全路径写法
+	$ git branch --set-upstream-to=[host]/[remote-branch] [branch]
+
+	_____________________________________
+	Given a branch foo and a remote upstream:
+	
+	#As of Git 1.8.0:
+	
+	$ git branch -u upstream/foo
+	#Or, if local branch foo is not the current branch:
+	
+	$ git branch -u upstream/foo foo
+	#Or, if you like to type longer commands, these are equivalent to the above two:
+	
+	$ git branch --set-upstream-to=upstream/foo
+	
+	$ git branch --set-upstream-to=upstream/foo foo
+	#As of Git 1.7.0:
+	
+	$ git branch --set-upstream foo upstream/foo
+
+	
+
+	
